@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+
+}
+
+.App {
+    width: 500px;
+}
+
+.post {
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    border: 1px red solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_increment{
+    margin-right: 20px ;
+}
+.spisok{
+    text-align: center;
+}
+
+.postsclear{
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.createposts{
+    margin-top:10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
