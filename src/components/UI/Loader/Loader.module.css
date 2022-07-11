@@ -1,0 +1,21 @@
+@keyframes rotate {
+
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+
+  .loader {
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px dashed black;
+    animation: rotate 5s infinite linear;
+}
