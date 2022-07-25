@@ -6,4 +6,9 @@
     background:  transparent;
     border: 2px solid teal;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.myBtn:hover{
+    opacity: 0.9;
 }

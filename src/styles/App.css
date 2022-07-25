@@ -88,12 +88,11 @@
     justify-content: space-between;
     text-align: start;
     align-items: center;
-    background-color: rgba(0, 8, 255, 0.839);
+    background-color: black;
   }
 
   .navbar__links {
-    margin: auto;
-    padding: 0 15px;
+    margin: 0;
   }
 
   .navbar_link {
@@ -102,7 +101,6 @@
     font-size: 30px;
     font-weight: bold;
     color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.88);
     padding: 0 10px;
     margin: 0 30px;
   }

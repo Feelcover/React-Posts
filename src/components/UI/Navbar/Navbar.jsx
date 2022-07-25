@@ -1,15 +1,33 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../context";
+import MyButton from "../button/MyButton";
 
 const Navbar = () => {
-  return (
-        <div className="navbar">
-        <div className="navbar__links">
-          <Link className="navbar_link" to="/about">О сайте</Link>
-          <Link className="navbar_link" to="/posts">Посты</Link>
-        </div>
-      </div>
-  )
-}
+  const { isAuth, setIsAuth } = React.useContext(AuthContext);
+  const logout = () => {
+    setIsAuth(false);
+    localStorage.removeItem("auth");
+  };
 
-export default Navbar
+  return (
+    <div className="navbar">
+      <MyButton
+        style={{ color: "white", border: "2px solid white" }}
+        onClick={() => logout()}
+      >
+        Выйти
+      </MyButton>
+      <div className="navbar__links">
+        <Link className="navbar_link" to="/about">
+          О сайте
+        </Link>
+        <Link className="navbar_link" to="/posts">
+          Посты
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
