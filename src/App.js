@@ -4,7 +4,6 @@ import AppRouter from "./components/AppRouter";
 import Navbar from "./components/UI/Navbar/Navbar";
 import { AuthContext } from "./context";
 
-// import Posts from "./pages/Posts";
 import "./styles/App.css";
 
 function App() {
